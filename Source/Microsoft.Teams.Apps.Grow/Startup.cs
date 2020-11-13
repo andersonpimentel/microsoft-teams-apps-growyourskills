@@ -15,6 +15,7 @@ namespace Microsoft.Teams.Apps.Grow
     using Microsoft.Extensions.Caching.Memory;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.IdentityModel.Logging;
     using Microsoft.Teams.Apps.Grow.Authentication;
     using Microsoft.Teams.Apps.Grow.Bot;
 
@@ -68,6 +69,7 @@ namespace Microsoft.Teams.Apps.Grow
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddLocalization(this.configuration);
+            IdentityModelEventSource.ShowPII = true;
         }
 
         /// <summary>
