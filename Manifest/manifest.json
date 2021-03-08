@@ -14,13 +14,13 @@
     "color": "color.png",
     "outline": "outline.png"
   },
-  "name": {
-    "short": "Grow Your Skills - DEV",
-    "full": "Grow Your Skills - DEV"
-  },
+    "name": {
+        "short": "Colabore - DEV",
+        "full": "Colabore - DEV"
+    },
   "description": {
-    "short": "Encourage employees to discover opportunities, contribute and acquire new skills",
-    "full": "Grow Your Skills is a platform for employees to discover new projects/opportunities based on their interests, learn and acquire skills based upon the competencies required and qualifications."
+    "short": "Encoraja empregados a descobrir oportunidades, contribuir e adquirir habilidades",
+    "full": "O Colabore é uma plataforma para empregados descobrirem novos projetos/oportunidades a partir de seus interesses, aprender e adquirir habilidades de acordo com competências requeridas e qualificações."
   },
   "accentColor": "#B8FF4A",
   "configurableTabs": [
@@ -33,21 +33,21 @@
   "staticTabs": [
     {
       "entityId": "DiscoverProjectsTab",
-      "name": "Discover",
+      "name": "Descobrir",
       "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net",
       "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net",
       "scopes": [ "personal" ]
     },
     {
       "entityId": "YourProjectsTab",
-      "name": "Your projects",
+      "name": "Seus projetos",
       "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/my-projects",
       "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/my-projects",
       "scopes": [ "personal" ]
     },
     {
       "entityId": "AcquiredSkillsTab",
-      "name": "Skills acquired",
+      "name": "Habilidades adquiridas",
       "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/skill-acquired",
       "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/skill-acquired",
       "scopes": [ "personal" ]
@@ -62,8 +62,8 @@
           "scopes": [ "personal" ],
           "commands": [
             {
-              "title": "Help",
-              "description": "Display commands and what they do."
+              "title": "Ajuda",
+              "description": "Exibe comandos e o que fazem."
             }
           ]
         }
@@ -79,39 +79,39 @@
       "commands": [
         {
           "id": "allProjects",
-          "title": "All",
-          "description": "Show all created projects.",
+          "title": "Todos",
+          "description": "Exibir todos os projetos criados.",
           "parameters": [
             {
               "name": "searchText",
               "title": "allProjects",
-              "description": "Search projects"
+              "description": "Procurar projetos"
             }
           ],
           "initialRun": true
         },
         {
           "id": "joinedProjects",
-          "title": "Projects joined",
-          "description": "Show current user joined projects.",
+          "title": "Projetos em que participo",
+          "description": "Exibir todos os projetos em que o usuário participa.",
           "parameters": [
             {
               "name": "searchText",
-              "title": "Projects joined",
-              "description": "Search projects"
+              "title": "Projetos em que participo",
+              "description": "Procurar projetos"
             }
           ],
           "initialRun": true
         },
         {
           "id": "createdProjectsByMe",
-          "title": "Projects created",
-          "description": "Show projects created by current user.",
+          "title": "Projetos criados",
+          "description": "Exibir projetos criados pelo usuário atual.",
           "parameters": [
             {
               "name": "searchText",
-              "title": "Projects created",
-              "description": "Search projects"
+              "title": "Projetos criados",
+              "description": "Procurar projetos"
             }
           ],
           "initialRun": true
