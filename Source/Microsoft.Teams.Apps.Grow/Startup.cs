@@ -5,6 +5,7 @@
 namespace Microsoft.Teams.Apps.Grow
 {
     using System;
+    using System.Globalization;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Mvc;
@@ -15,10 +16,8 @@ namespace Microsoft.Teams.Apps.Grow
     using Microsoft.Extensions.Caching.Memory;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.IdentityModel.Logging;
     using Microsoft.Teams.Apps.Grow.Authentication;
     using Microsoft.Teams.Apps.Grow.Bot;
-    using System.Globalization;
 
     /// <summary>
     /// The Startup class is responsible for configuring the Dependency Injection container and acts as the composition root.
@@ -70,7 +69,7 @@ namespace Microsoft.Teams.Apps.Grow
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddLocalization(this.configuration);
-            
+
             CultureInfo.CurrentUICulture = CultureInfo.GetCultureInfo("pt-BR");
         }
 
