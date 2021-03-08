@@ -5,18 +5,18 @@
   "id": "94ef83a1-f72e-4fff-8358-0dd0465eae55",
   "packageName": "com.microsoft.teams.apptemplates.growyourskills",
   "developer": {
-    "name": "<company name>",
-    "websiteUrl": "<appDomain>",
-    "privacyUrl": "<privacy url>",
-    "termsOfUseUrl": "<terms of use url>"
+    "name": "Petrobras",
+    "websiteUrl": "https://petrobras.com.br/pt/politica-e-termos-de-uso/",
+    "privacyUrl": "https://petrobras.com.br/pt/politica-e-termos-de-uso/",
+    "termsOfUseUrl": "https://petrobras.com.br/pt/politica-e-termos-de-uso/"
   },
   "icons": {
     "color": "color.png",
     "outline": "outline.png"
   },
   "name": {
-    "short": "Grow Your Skills",
-    "full": "Grow Your Skills"
+    "short": "Grow Your Skills - DEV",
+    "full": "Grow Your Skills - DEV"
   },
   "description": {
     "short": "Encourage employees to discover opportunities, contribute and acquire new skills",
@@ -25,7 +25,7 @@
   "accentColor": "#B8FF4A",
   "configurableTabs": [
     {
-      "configurationUrl": "<appDomain>/configtab",
+      "configurationUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/configtab",
       "canUpdateConfiguration": true,
       "scopes": [ "team" ]
     }
@@ -34,28 +34,28 @@
     {
       "entityId": "DiscoverProjectsTab",
       "name": "Discover",
-      "contentUrl": "<appDomain>",
-      "websiteUrl": "<appDomain>",
+      "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net",
+      "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net",
       "scopes": [ "personal" ]
     },
     {
       "entityId": "YourProjectsTab",
       "name": "Your projects",
-      "contentUrl": "<appDomain>/my-projects",
-      "websiteUrl": "<appDomain>/my-projects",
+      "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/my-projects",
+      "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/my-projects",
       "scopes": [ "personal" ]
     },
     {
       "entityId": "AcquiredSkillsTab",
       "name": "Skills acquired",
-      "contentUrl": "<appDomain>/skill-acquired",
-      "websiteUrl": "<appDomain>/skill-acquired",
+      "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/skill-acquired",
+      "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/skill-acquired",
       "scopes": [ "personal" ]
     }
   ],
   "bots": [
     {
-      "botId": "<botId>",
+      "botId": "6498133a-815d-476b-87e6-b58968c02dc3",
       "scopes": [ "personal", "team" ],
       "commandLists": [
         {
@@ -74,7 +74,7 @@
   ],
   "composeExtensions": [
     {
-      "botId": "<botId>",
+      "botId": "6498133a-815d-476b-87e6-b58968c02dc3",
       "canUpdateConfiguration": false,
       "commands": [
         {
@@ -120,10 +120,10 @@
     }
   ],
   "validDomains": [
-    "<appDomain>"
+    "petrobras-teams-apps-grow-nprd.azurefd.net"
   ],
   "webApplicationInfo": {
-    "id": "<botId>",
-    "resource": "<ApplicationIdURI>"
+    "id": "6498133a-815d-476b-87e6-b58968c02dc3",
+    "resource": "api://petrobras-teams-apps-grow-nprd.azurefd.net/6498133a-815d-476b-87e6-b58968c02dc3"
   }
 }

@@ -454,4 +454,7 @@ local.settings.json
 /Source/Microsoft.Teams.Apps.Grow/obj
 /Source/.vs
 /.vs
+/.vscode
 /Source/Microsoft.Teams.Apps.Grow/ClientApp/node_modules
+/Source/Microsoft.Teams.Apps.Grow/ClientApp/build
+/Manifest/*.zip
