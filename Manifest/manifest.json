@@ -20,7 +20,7 @@
     },
   "description": {
     "short": "Encoraja empregados a descobrir oportunidades, contribuir e adquirir habilidades",
-    "full": "O Colabore é uma plataforma para empregados descobrirem novos projetos/oportunidades a partir de seus interesses, aprender e adquirir habilidades de acordo com competências requeridas e qualificações."
+    "full": "O Colabore Ã© uma plataforma para empregados descobrirem novos projetos/oportunidades a partir de seus interesses, aprender e adquirir habilidades de acordo com competÃªncias requeridas e qualificaÃ§Ãµes."
   },
   "accentColor": "#B8FF4A",
   "configurableTabs": [
@@ -93,7 +93,7 @@
         {
           "id": "joinedProjects",
           "title": "Projetos em que participo",
-          "description": "Exibir todos os projetos em que o usuário participa.",
+          "description": "Exibir todos os projetos em que o usuÃ¡rio participa.",
           "parameters": [
             {
               "name": "searchText",
@@ -106,7 +106,7 @@
         {
           "id": "createdProjectsByMe",
           "title": "Projetos criados",
-          "description": "Exibir projetos criados pelo usuário atual.",
+          "description": "Exibir projetos criados pelo usuÃ¡rio atual.",
           "parameters": [
             {
               "name": "searchText",
