@@ -18,6 +18,7 @@ namespace Microsoft.Teams.Apps.Grow
     using Microsoft.IdentityModel.Logging;
     using Microsoft.Teams.Apps.Grow.Authentication;
     using Microsoft.Teams.Apps.Grow.Bot;
+    using System.Globalization;
 
     /// <summary>
     /// The Startup class is responsible for configuring the Dependency Injection container and acts as the composition root.
@@ -69,7 +70,8 @@ namespace Microsoft.Teams.Apps.Grow
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddLocalization(this.configuration);
-            IdentityModelEventSource.ShowPII = true;
+            
+            CultureInfo.CurrentUICulture = CultureInfo.GetCultureInfo("pt-BR");
         }
 
         /// <summary>
