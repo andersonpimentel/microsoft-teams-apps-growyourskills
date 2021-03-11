@@ -1,129 +1,179 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.5",
-  "version": "1.0.1",
-  "id": "94ef83a1-f72e-4fff-8358-0dd0465eae55",
-  "packageName": "com.microsoft.teams.apptemplates.growyourskills",
-  "developer": {
-    "name": "Petrobras",
-    "websiteUrl": "https://petrobras.com.br/pt/politica-e-termos-de-uso/",
-    "privacyUrl": "https://petrobras.com.br/pt/politica-e-termos-de-uso/",
-    "termsOfUseUrl": "https://petrobras.com.br/pt/politica-e-termos-de-uso/"
-  },
-  "icons": {
-    "color": "color.png",
-    "outline": "outline.png"
-  },
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.8",
+    "version": "1.0.1",
+    "id": "94ef83a1-f72e-4fff-8358-0dd0465eae55",
+    "packageName": "com.microsoft.teams.apptemplates.growyourskills",
+    "developer": {
+        "name": "Petrobras",
+        "websiteUrl": "https://petrobras.com.br",
+        "privacyUrl": "https://petrobras.com.br/pt/privacidade-e-protecao-de-dados-pessoais/?q=aviso-de-privacidade",
+        "termsOfUseUrl": "https://petrobras.com.br/pt/privacidade-e-protecao-de-dados-pessoais/?q=termos-de-uso"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
     "name": {
         "short": "Colabore - DEV",
         "full": "Colabore - DEV"
     },
-  "description": {
-    "short": "Encoraja empregados a descobrir oportunidades, contribuir e adquirir habilidades",
-    "full": "O Colabore é uma plataforma para empregados descobrirem novos projetos/oportunidades a partir de seus interesses, aprender e adquirir habilidades de acordo com competências requeridas e qualificações."
-  },
-  "accentColor": "#B8FF4A",
-  "configurableTabs": [
-    {
-      "configurationUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/configtab",
-      "canUpdateConfiguration": true,
-      "scopes": [ "team" ]
-    }
-  ],
-  "staticTabs": [
-    {
-      "entityId": "DiscoverProjectsTab",
-      "name": "Descobrir",
-      "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net",
-      "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net",
-      "scopes": [ "personal" ]
+    "description": {
+        "short": "Encoraja empregados a descobrir oportunidades, contribuir e adquirir habilidades",
+        "full": "O Colabore é uma plataforma para empregados descobrirem novos projetos/oportunidades a partir de seus interesses, aprender e adquirir habilidades de acordo com competências requeridas e qualificações."
     },
-    {
-      "entityId": "YourProjectsTab",
-      "name": "Seus projetos",
-      "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/my-projects",
-      "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/my-projects",
-      "scopes": [ "personal" ]
-    },
-    {
-      "entityId": "AcquiredSkillsTab",
-      "name": "Habilidades adquiridas",
-      "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/skill-acquired",
-      "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/skill-acquired",
-      "scopes": [ "personal" ]
-    }
-  ],
-  "bots": [
-    {
-      "botId": "6498133a-815d-476b-87e6-b58968c02dc3",
-      "scopes": [ "personal", "team" ],
-      "commandLists": [
+    "accentColor": "#B8FF4A",
+    "configurableTabs": [
         {
-          "scopes": [ "personal" ],
-          "commands": [
-            {
-              "title": "Ajuda",
-              "description": "Exibe comandos e o que fazem."
-            }
-          ]
+            "configurationUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/configtab",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team"
+            ]
         }
-      ],
-      "supportsFiles": false,
-      "isNotificationOnly": false
-    }
-  ],
-  "composeExtensions": [
-    {
-      "botId": "6498133a-815d-476b-87e6-b58968c02dc3",
-      "canUpdateConfiguration": false,
-      "commands": [
+    ],
+    "staticTabs": [
         {
-          "id": "allProjects",
-          "title": "Todos",
-          "description": "Exibir todos os projetos criados.",
-          "parameters": [
-            {
-              "name": "searchText",
-              "title": "allProjects",
-              "description": "Procurar projetos"
-            }
-          ],
-          "initialRun": true
+            "entityId": "conversations",
+            "scopes": [
+                "personal"
+            ]
         },
         {
-          "id": "joinedProjects",
-          "title": "Projetos em que participo",
-          "description": "Exibir todos os projetos em que o usuário participa.",
-          "parameters": [
-            {
-              "name": "searchText",
-              "title": "Projetos em que participo",
-              "description": "Procurar projetos"
-            }
-          ],
-          "initialRun": true
+            "entityId": "DiscoverProjectsTab",
+            "name": "Descobrir",
+            "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net",
+            "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net",
+            "scopes": [
+                "personal"
+            ]
         },
         {
-          "id": "createdProjectsByMe",
-          "title": "Projetos criados",
-          "description": "Exibir projetos criados pelo usuário atual.",
-          "parameters": [
-            {
-              "name": "searchText",
-              "title": "Projetos criados",
-              "description": "Procurar projetos"
-            }
-          ],
-          "initialRun": true
+            "entityId": "YourProjectsTab",
+            "name": "Seus projetos",
+            "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/my-projects",
+            "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/my-projects",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "AcquiredSkillsTab",
+            "name": "Habilidades adquiridas",
+            "contentUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/skill-acquired",
+            "websiteUrl": "https://petrobras-teams-apps-grow-nprd.azurefd.net/skill-acquired",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "about",
+            "scopes": [
+                "personal"
+            ]
         }
-      ]
+    ],
+    "bots": [
+        {
+            "botId": "6498133a-815d-476b-87e6-b58968c02dc3",
+            "scopes": [
+                "personal",
+                "team"
+            ],
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Ajuda",
+                            "description": "Exibe comandos e o que fazem."
+                        }
+                    ]
+                }
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false
+        }
+    ],
+    "composeExtensions": [
+        {
+            "botId": "6498133a-815d-476b-87e6-b58968c02dc3",
+            "canUpdateConfiguration": false,
+            "commands": [
+                {
+                    "id": "allProjects",
+                    "type": "query",
+                    "title": "Todos",
+                    "description": "Exibir todos os projetos criados.",
+                    "initialRun": true,
+                    "fetchTask": false,
+                    "context": [
+                        "compose",
+                        "commandBox"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "searchText",
+                            "title": "allProjects",
+                            "description": "Procurar projetos",
+                            "inputType": "text"
+                        }
+                    ]
+                },
+                {
+                    "id": "joinedProjects",
+                    "type": "query",
+                    "title": "Projetos em que participo",
+                    "description": "Exibir todos os projetos em que o usuário participa.",
+                    "initialRun": true,
+                    "fetchTask": false,
+                    "context": [
+                        "compose",
+                        "commandBox"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "searchText",
+                            "title": "Projetos em que participo",
+                            "description": "Procurar projetos",
+                            "inputType": "text"
+                        }
+                    ]
+                },
+                {
+                    "id": "createdProjectsByMe",
+                    "type": "query",
+                    "title": "Projetos criados",
+                    "description": "Exibir projetos criados pelo usuário atual.",
+                    "initialRun": true,
+                    "fetchTask": false,
+                    "context": [
+                        "compose",
+                        "commandBox"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "searchText",
+                            "title": "Projetos criados",
+                            "description": "Procurar projetos",
+                            "inputType": "text"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "petrobras-teams-apps-grow-nprd.azurefd.net"
+    ],
+    "webApplicationInfo": {
+        "id": "6498133a-815d-476b-87e6-b58968c02dc3",
+        "resource": "api://petrobras-teams-apps-grow-nprd.azurefd.net/6498133a-815d-476b-87e6-b58968c02dc3"
     }
-  ],
-  "validDomains": [
-    "petrobras-teams-apps-grow-nprd.azurefd.net"
-  ],
-  "webApplicationInfo": {
-    "id": "6498133a-815d-476b-87e6-b58968c02dc3",
-    "resource": "api://petrobras-teams-apps-grow-nprd.azurefd.net/6498133a-815d-476b-87e6-b58968c02dc3"
-  }
 }
