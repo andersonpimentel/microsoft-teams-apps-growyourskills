@@ -142,7 +142,7 @@ class JoinProjectDialogContent extends React.Component<IJoinProjectDialogContent
                             </Flex>
                             <Flex gap="gap.small" styles={{ marginTop: "1.33rem"}}>
                                 <Flex.Item styles={{ width: "9rem" }}>
-                                    <Text content={this.localize("projectDurationLabel") + " :"} />
+                                    <Text content={this.localize("projectDurationLabel") + ":"} />
                                 </Flex.Item>
                                 <Flex.Item>
                                     <Text weight="semibold" content={startDate + " - " + endDate} />
@@ -150,7 +150,7 @@ class JoinProjectDialogContent extends React.Component<IJoinProjectDialogContent
                             </Flex>
                             <Flex gap="gap.small" styles={{ marginTop: "1.33rem"}}>
                                 <Flex.Item styles={{ width: "9rem" }}>
-                                    <Text content={this.localize("teamSize") + " :"} />
+                                    <Text content={this.localize("teamSize") + ":"} />
                                 </Flex.Item>
                                 <Flex.Item>
                                     <Text weight="semibold" content={this.state.projectDetails.teamSize} />
@@ -158,14 +158,14 @@ class JoinProjectDialogContent extends React.Component<IJoinProjectDialogContent
                             </Flex>
                             <Flex gap="gap.small" styles={{ marginTop: "1.33rem"}}>
                                 <Flex.Item styles={{ width: "9rem" }}>
-                                    <Text content={this.localize("membersJoinedLabel") + " :"} />
+                                    <Text content={this.localize("membersJoinedLabel") + ":"} />
                                 </Flex.Item>
                                 <Flex.Item>
                                     <Text weight="semibold" content={joinedMembersCount} />
                                 </Flex.Item>
                             </Flex>
                             <Flex gap="gap.smaller" vAlign="center" className="label-spacing input-label-space-between">
-                                <Text content={this.localize("skillsNeededLabel") + " :"} />
+                                <Text content={this.localize("skillsNeededLabel") + ":"} />
                             </Flex>
                             <Flex gap="gap.smaller" className="skills-flex skills-new-project" vAlign="center">
                                 <div>
@@ -184,7 +184,7 @@ class JoinProjectDialogContent extends React.Component<IJoinProjectDialogContent
                                 </div>
                             </Flex>
                             <Flex gap="gap.smaller" className="label-spacing input-fields-margin-between-add-post">
-                                <Text content={this.localize("docLinkFormLabel") + " :"} />
+                                <Text content={this.localize("docLinkFormLabel") + ":"} />
                             </Flex>
                             <Flex gap="gap.smaller" className="document-url-flex" vAlign="center">
                                 <div>

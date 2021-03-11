@@ -8,6 +8,7 @@ import Backend from 'i18next-xhr-backend';
 import * as microsoftTeams from "@microsoft/teams-js";
 
 let locale = "pt-BR";
+let fallbackLocale = "en-US";
 microsoftTeams.initialize();
 microsoftTeams.getContext((context: microsoftTeams.Context) => {
     i18n.changeLanguage(context.locale!);
@@ -18,7 +19,7 @@ i18n
     .use(initReactI18next) // passes i18n down to react-i18next
     .init({
         lng: locale,
-        fallbackLng: locale,
+        fallbackLng: fallbackLocale,
         keySeparator: false, // we do not use keys in form messages.welcome
         interpolation: {
             escapeValue: false // react already safes from xss

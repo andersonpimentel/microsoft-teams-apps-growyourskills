@@ -165,7 +165,7 @@ class JoinProjectDialogContent extends React.Component<WithTranslation
                                     <div className="joined-project-half-field-taskview label-spacing-taskview">
                                         <Flex gap="gap.smaller" className="input-label-space-between-taskview edit-team-size-space">
                                             <Flex.Item>
-                                                <Text content={this.localize("projectDurationLabel") + " :"} />
+                                                <Text content={this.localize("projectDurationLabel") + ":"} />
                                             </Flex.Item>
                                         </Flex>
                                     </div>
@@ -181,7 +181,7 @@ class JoinProjectDialogContent extends React.Component<WithTranslation
                                     <div className="joined-project-half-field-taskview label-spacing-taskview">
                                         <Flex gap="gap.smaller" className="input-label-space-between-taskview">
                                             <Flex.Item>
-                                                <Text content={this.localize("teamSize") + " :"} />
+                                                <Text content={this.localize("teamSize") + ":"} />
                                             </Flex.Item>
                                         </Flex>
                                     </div>
@@ -197,7 +197,7 @@ class JoinProjectDialogContent extends React.Component<WithTranslation
                                     <div className="joined-project-half-field-taskview label-spacing-taskview ">
                                         <Flex gap="gap.smaller" className="input-label-space-between-taskview">
                                             <Flex.Item>
-                                                <Text content={this.localize("membersJoinedLabel") + " :"} />
+                                                <Text content={this.localize("membersJoinedLabel") + ":"} />
                                             </Flex.Item>
                                         </Flex>
                                     </div>
@@ -210,7 +210,7 @@ class JoinProjectDialogContent extends React.Component<WithTranslation
                                     </div>
                                 </Flex>
                                 <Flex gap="gap.smaller" vAlign="center" className="label-spacing-taskview input-label-space-between-taskview">
-                                    <Text content={this.localize("skillsNeededLabel") + " :"} />
+                                    <Text content={this.localize("skillsNeededLabel") + ":"} />
                                 </Flex>
                                 <Flex gap="gap.smaller" className="skills-flex skills-new-project" vAlign="center">
                                     <div>
@@ -229,7 +229,7 @@ class JoinProjectDialogContent extends React.Component<WithTranslation
                                     </div>
                                 </Flex>
                                 <Flex gap="gap.smaller" className="label-spacing-taskview input-fields-margin-between-add-post-taskview">
-                                    <Text content={this.localize("docLinkFormLabel") + " :"} />
+                                    <Text content={this.localize("docLinkFormLabel") + ":"} />
                                 </Flex>
                                 <Flex gap="gap.smaller" className="document-url-flex" vAlign="center">
                                     <div>
