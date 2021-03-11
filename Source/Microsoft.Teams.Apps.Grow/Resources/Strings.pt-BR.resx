@@ -124,24 +124,24 @@
     <value>Colabore</value>
   </data>
   <data name="AuthorText" xml:space="preserve">
-    <value>Proprietário do projeto</value>
+    <value>Proprietário do desafio</value>
   </data>
   <data name="BlockedStatusType" xml:space="preserve">
     <value>Bloqueado</value>
   </data>
   <data name="CarouselCard1Text" xml:space="preserve">
-    <value>&lt;b&gt;Descubra e participe&lt;/b&gt; em projetos/oportunidades que te interessam para aprender e adquirir novas habilidades. &lt;br /&gt;
-&lt;b&gt;Veja as habilidades&lt;/b&gt; adquiridas em múltiplos projetos em um só lugar.
+    <value>&lt;b&gt;Descubra e participe&lt;/b&gt; em desafios/oportunidades que te interessam para aprender e adquirir novas habilidades. &lt;br /&gt;
+&lt;b&gt;Veja as habilidades&lt;/b&gt; adquiridas em múltiplos desafios em um só lugar.
  &lt;br /&gt;
-&lt;b&gt;Crie projetos&lt;/b&gt; para dar a seus colegas a oportunidade de se desenvolver.</value>
+&lt;b&gt;Crie desafios&lt;/b&gt; para dar a seus colegas a oportunidade de se desenvolver.</value>
   </data>
   <data name="CarouselCard2Text" xml:space="preserve">
-    <value>&lt;b&gt;Apoie&lt;/b&gt; membros do time e envie uma nota pessoal no encerramento do projeto.&lt;br /&gt;&lt;b&gt;Seja notificado&lt;/b&gt; sobre atualizações relacionadas ao projetos para gerir efetivamente.</value>
+    <value>&lt;b&gt;Reconheça&lt;/b&gt; membros do time e envie uma nota pessoal no encerramento do desafio.&lt;br /&gt;&lt;b&gt;Seja notificado&lt;/b&gt; sobre atualizações relacionadas a desafios para gerir efetivamente.</value>
   </data>
   <data name="CarouselCard3Text" xml:space="preserve">
     <value>&lt;b&gt;Adicione o aplicativo&lt;/b&gt; à Aba Canal a partir das habilidades a desenvolver em conjunto com seu time.
 &lt;br /&gt;
-&lt;b&gt;Compartilhe os projetos&lt;/b&gt; que você criou ou participa em um canal para aprender junto.</value>
+&lt;b&gt;Compartilhe os desafios&lt;/b&gt; que você criou ou participa em um canal para aprender junto.</value>
   </data>
   <data name="ChatButton" xml:space="preserve">
     <value>Chat</value>
@@ -150,7 +150,7 @@
     <value>Fechado</value>
   </data>
   <data name="CongratulationsMessage" xml:space="preserve">
-    <value>Atualização de projeto de time</value>
+    <value>Atualização do time do desafio</value>
   </data>
   <data name="ConnectWithUserMessage" xml:space="preserve">
     <value>Eu disse a {0} que você entraria em contato.</value>
@@ -165,7 +165,7 @@
     <value>Ir para habilidades</value>
   </data>
   <data name="joinProjectAfterDelete" xml:space="preserve">
-    <value>Quer participar de um projeto diferente?</value>
+    <value>Quer participar de um desafio diferente?</value>
   </data>
   <data name="MessagingExtensionCardViewProjectDetailButtonText" xml:space="preserve">
     <value>Ver detalhes</value>
@@ -186,28 +186,28 @@
     <value>Abrir item</value>
   </data>
   <data name="PersonalWelcomeCardDiscoverButtonText" xml:space="preserve">
-    <value>Ver todos os projetos</value>
+    <value>Ver todos os desafios</value>
   </data>
   <data name="ProjectClosedMessage" xml:space="preserve">
-    <value>{0} fechou o projeto '**{1}**'</value>
+    <value>{0} encerrou o desafio '**{1}**'</value>
   </data>
   <data name="ProjectDeletedMessage" xml:space="preserve">
-    <value>O projeto '**{1}**' foi excluído por **{0}** e agora está indisponível para participar.</value>
+    <value>O desafio '**{1}**' foi excluído por **{0}** e agora está indisponível para participar.</value>
   </data>
   <data name="ProjectDetails" xml:space="preserve">
-    <value>Detalhes do projeto</value>
+    <value>Detalhes do desafio</value>
   </data>
   <data name="ProjectDurationText" xml:space="preserve">
     <value>Duração</value>
   </data>
   <data name="ProjectJoinedMessage" xml:space="preserve">
-    <value>**{0}** entrou no seu projeto '**{1}**'</value>
+    <value>**{0}** entrou no seu desafio '**{1}**'</value>
   </data>
   <data name="ProjectRemovalMessage" xml:space="preserve">
-    <value>**{0}** removeu você do projeto '**{1}**'</value>
+    <value>**{0}** removeu você do desafio '**{1}**'</value>
   </data>
   <data name="ProjectStatusIcon" xml:space="preserve">
-    <value>Ícone de status do projeto</value>
+    <value>Ícone de status do desafio</value>
   </data>
   <data name="SkillsEndorsedMessage" xml:space="preserve">
     <value>Aqui estão algumas habilidades que {0} conferiu a você.</value>
@@ -222,7 +222,7 @@
     <value>Status</value>
   </data>
   <data name="TabName" xml:space="preserve">
-    <value>Todos os projetos</value>
+    <value>Todos os desafios</value>
   </data>
   <data name="TeamSizeText" xml:space="preserve">
     <value>Tamanho do time</value>
@@ -231,16 +231,16 @@
     <value>Configurar</value>
   </data>
   <data name="TryNewProjectsMessage" xml:space="preserve">
-    <value>Tente outros novos projetos e adquira habilidades.</value>
+    <value>Tente outros novos desafios e adquira habilidades.</value>
   </data>
   <data name="WelcomeCardContent" xml:space="preserve">
-    <value>Eu sou o bot do Colabore e estou aqui para ajudar seu time a adquirir novas habilidades e obter experiências no trabalho, conectando pessoas a projetos.</value>
+    <value>Eu sou o bot do Colabore e estou aqui para ajudar seu time a adquirir novas habilidades e obter experiências no trabalho, conectando pessoas a desafios.</value>
   </data>
   <data name="WelcomeCardDescriptionText" xml:space="preserve">
     <value>Aqui está o que você pode fazer:
-- Poste seu próprio projeto, solicitando ajuda de pessoas com habilidades específicas.
-- Descubra projetos para participar com base nas habilidades que você gostaria de adquirir ou nas pessoas com as quais gostaria de aprender.
-- Seja reconhecido(a) pelas habilidades com as quais você contribui para os projetos dos quais participa.</value>
+- Poste seu próprio desafio, solicitando ajuda de pessoas com habilidades específicas.
+- Descubra desafios para participar com base nas habilidades que você gostaria de adquirir ou nas pessoas com as quais gostaria de aprender.
+- Seja reconhecido(a) pelas habilidades com as quais você contribui para os desafios dos quais participa.</value>
   </data>
   <data name="WelcomeCardGetStartedText" xml:space="preserve">
     <value>Vamos começar!</value>

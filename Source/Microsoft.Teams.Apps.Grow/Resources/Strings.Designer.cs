@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Microsoft.Teams.Apps.Grow {
+namespace Microsoft.Teams.Apps.Grow.Resources {
     using System;
     
     
