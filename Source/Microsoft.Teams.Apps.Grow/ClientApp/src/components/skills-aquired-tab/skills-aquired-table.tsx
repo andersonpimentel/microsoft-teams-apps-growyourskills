@@ -15,6 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../styles/private-list.css";
 
 var moment = require('moment');
+moment.locale('pt-br');
 
 interface IAquiredSkillsTableProps extends WithTranslation {
     screenWidth: number,
@@ -141,7 +142,7 @@ class AcquiredSkillsTable extends React.Component<IAquiredSkillsTableProps> {
                             className="project-endorsee"
                         /></>, truncateContent: true, className: "username-date-column"
                     },
-                    { content: <Text content={moment.utc(project.projectClosedDate).local().format("MM-DD-YYYY hh:mm A")} title={moment.utc(project.projectClosedDate).local().format("MM-DD-YYYY hh:mm A")} />, truncateContent: true, className: "username-date-column" }
+                    { content: <Text content={moment.utc(project.projectClosedDate).local().format("DD-MM-YYYY HH:mm")} title={moment.utc(project.projectClosedDate).local().format("DD-MM-YYYY HH:mm")} />, truncateContent: true, className: "username-date-column" }
                 ],
             }
         ));

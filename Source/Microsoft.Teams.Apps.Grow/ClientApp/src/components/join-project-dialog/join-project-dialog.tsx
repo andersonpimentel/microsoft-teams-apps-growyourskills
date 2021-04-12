@@ -16,6 +16,7 @@ import "../../styles/join-project-taskmodule-view.css";
 import "../../styles/new-project-dialog.css";
 
 var moment = require('moment');
+moment.locale('pt-br');
 
 interface IJoinProjectDialogContentState {
     projectDetails: IProjectDetails;
@@ -142,8 +143,8 @@ class JoinProjectDialogContent extends React.Component<WithTranslation
             membersJoined = this.state.projectDetails.projectParticipantsUserIds.split(';').length
         }
 
-        let startDate = moment.utc(this.state.projectDetails.projectStartDate).local().format("MM-DD-YYYY hh:mm A");
-        let endDate = moment.utc(this.state.projectDetails.projectEndDate).local().format("MM-DD-YYYY hh:mm A");
+        let startDate = moment.utc(this.state.projectDetails.projectStartDate).local().format("DD-MM-YYYY HH:mm");
+        let endDate = moment.utc(this.state.projectDetails.projectEndDate).local().format("DD-MM-YYYY HH:mm");
 
         if (this.state.isLoading === false) {
             return (

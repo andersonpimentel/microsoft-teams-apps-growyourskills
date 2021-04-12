@@ -16,6 +16,9 @@ import Resources from "../../constants/resources";
 
 import "../../styles/new-project-dialog.css";
 import moment from "moment";
+import "moment/locale/pt-br";
+
+moment.locale('pt-br');
 
 interface INewProjectDialogContentProps extends WithTranslation {
     onSubmit: (isSuccess: boolean, getSubmittedPost: IProjectDetails) => void;
