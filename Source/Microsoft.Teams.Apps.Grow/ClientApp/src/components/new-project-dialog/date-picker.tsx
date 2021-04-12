@@ -15,7 +15,7 @@ import { mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
 import { DarkCustomizations } from "../../helpers/DarkCustomizations";
 import { DefaultCustomizations } from "../../helpers/DefaultCustomizations";
 import Constants from "../../constants/resources";
-//import ptbr from "date-fns/locale/pt-br";
+import { ICalendarFormatDateCallbacks, IDatePickerStrings } from "@fluentui/react";
 
 moment.locale('pt-br');
 
@@ -29,6 +29,37 @@ interface IDateePickerProps {
     theme: string
     screenWidth: number
 }
+const DayPickerStrings: IDatePickerStrings = {
+    months: [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+        'Julho',
+        'Agosto',
+        'Setembro',
+        'Outubro',
+        'Novembro',
+        'Dezembro'
+    ],
+
+    shortMonths: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+
+    days: ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'],
+
+    shortDays: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+
+    goToToday: 'Ir pra hoje',
+    prevMonthAriaLabel: 'Ir para o mês anterior',
+    nextMonthAriaLabel: 'Ir para o próximo mês',
+    prevYearAriaLabel: 'Ir para o ano anterior',
+    nextYearAriaLabel: 'Ir para o próximo ano'
+};
+
+const formatDateDMY = (date?: Date): string => moment(date).format("DD/MM/YYYY");
+
 const controlClass = mergeStyleSets({
     control: {
         margin: '0 0 15px 0',
@@ -132,6 +163,8 @@ const StartDateEndDate: React.FC<IDateePickerProps> = props => {
                                             value={startDate!}
                                             onSelectDate={onSelectStartDate}
                                             parseDateFromString={onParseDateFromString}
+                                            strings={DayPickerStrings}
+                                            formatDate={formatDateDMY}
                                         />
                                     </Customizer>
                                 </Fabric>
@@ -151,6 +184,8 @@ const StartDateEndDate: React.FC<IDateePickerProps> = props => {
                                             value={endDate!}
                                             onSelectDate={onSelectEndDate}
                                             parseDateFromString={onParseDateFromString}
+                                            strings={DayPickerStrings}
+                                            formatDate={formatDateDMY}
                                         />
                                     </Customizer>
                                 </Fabric>
@@ -178,6 +213,8 @@ const StartDateEndDate: React.FC<IDateePickerProps> = props => {
                                             value={startDate!}
                                             onSelectDate={onSelectStartDate}
                                             parseDateFromString={onParseDateFromString}
+                                            strings={DayPickerStrings}
+                                            formatDate={formatDateDMY}
                                         />
                                     </Customizer>
                                 </Fabric>
@@ -197,6 +234,8 @@ const StartDateEndDate: React.FC<IDateePickerProps> = props => {
                                             value={endDate!}
                                             onSelectDate={onSelectEndDate}
                                             parseDateFromString={onParseDateFromString}
+                                            strings={DayPickerStrings}
+                                            formatDate={formatDateDMY}
                                         />
                                     </Customizer>
                                 </Fabric>
