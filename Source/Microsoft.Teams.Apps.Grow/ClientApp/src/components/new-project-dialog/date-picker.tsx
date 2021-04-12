@@ -15,7 +15,7 @@ import { mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
 import { DarkCustomizations } from "../../helpers/DarkCustomizations";
 import { DefaultCustomizations } from "../../helpers/DefaultCustomizations";
 import Constants from "../../constants/resources";
-import ptbr from "date-fns/locale/pt-br";
+//import ptbr from "date-fns/locale/pt-br";
 
 moment.locale('pt-br');
 
